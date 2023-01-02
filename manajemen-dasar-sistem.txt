@@ -1,3 +1,65 @@
 1. Menambah User
     user@linux: # adduser new_user
     user@linux: # passwd: ****** 
+
+2. Menambah atau Mengubah Repositori
+    user@linux: # nano /etc/apt/sources.list 
+    
+    deb http://security.debian.org/debian-security bullseye-security main contrib
+    deb-src http://security.debian.org/debian-security bullseye-security main contrib
+
+    #Official Repo Debian
+    deb http://deb.debian.org/debian/ bullseye main
+    deb-src http://deb.debian.org/debian/ bullseye main
+
+    deb http://security.debian.org/debian-security bullseye-security main contrib
+    deb-src http://security.debian.org/debian-security bullseye-security main contrib
+
+    deb http://deb.debian.org/debian/ bullseye-updates main contrib
+    deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
+    #Official Non-Free
+    deb http://deb.debian.org/debian bullseye main contrib non-free
+    deb-src http://deb.debian.org/debian bullseye main contrib non-free
+
+    deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+    deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+    deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+    deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+    #Kartolo Surabaya
+    deb http://kartolo.sby.datautama.net.id/debian bullseye main contrib non-free
+    deb http://kartolo.sby.datautama.net.id/debian bullseye-updates main contrib non-free
+    deb http://kartolo.sby.datautama.net.id/debian-security bullseye-security main contrib non-free
+
+
+        Debian 11 	:  BULLSEYE
+        Debian 10	:  WHEEZY
+        Debian 9	:  STRETCH
+
+3. Update & Upgrade Sistem
+    user@linux: # apt-get update
+    user@linux: # ip a 
+    user@linux: # apt-get install net-tools dnsutils 
+    user@linux: # dmesg | grep -i eth
+    user@linux: # nano /etc/default/grub
+
+	    GRUB_CMDLINE_LINUX= ” net.ifnames=0 biosdevname=0 ”
+
+    user@linux: # grub-mkconfig -o /boot/grub/grub.cfg
+    user@linux: # nano /etc/network/interfaces
+
+	    allow eth0
+        auto eth0
+	    iface eth0 inet dhcp
+
+        allow hotplug eth1	
+        auto eth1
+	    iface eth1 inet dhcp
+
+    user@linux: # reboot  
+
+    Jika tidak diperlukan perubahan penamaan NIC dari Kernel terbaru maka tidak perlu diubah, cukup dengan menyesuaikan informasi NIC (enp2s0 atau yang lain selain eth yang sudah tersedia. 
+
+ 
