@@ -44,19 +44,18 @@
     user@linux: # apt-get install net-tools dnsutils 
     user@linux: # dmesg | grep -i eth
     user@linux: # nano /etc/default/grub
-
-	    GRUB_CMDLINE_LINUX= ” net.ifnames=0 biosdevname=0 ”
+    
+    	GRUB_CMDLINE_LINUX= ” net.ifnames=0 biosdevname=0 ”
 
     user@linux: # grub-mkconfig -o /boot/grub/grub.cfg
     user@linux: # nano /etc/network/interfaces
-
-	    allow eth0
-        auto eth0
-	    iface eth0 inet dhcp
-
-        allow hotplug eth1	
-        auto eth1
-	    iface eth1 inet dhcp
+	allow eth0
+	auto eth0
+	iface eth0 inet dhcp
+	    
+	allow hotplug eth1
+	auto eth1
+	iface eth1 inet dhcp
 
     user@linux: # reboot  
 
