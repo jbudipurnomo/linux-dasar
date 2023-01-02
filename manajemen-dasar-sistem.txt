@@ -62,4 +62,5 @@
 
     Jika tidak diperlukan perubahan penamaan NIC dari Kernel terbaru maka tidak perlu diubah, cukup dengan menyesuaikan informasi NIC (enp2s0 atau yang lain selain eth yang sudah tersedia. 
 
+4. 
  
