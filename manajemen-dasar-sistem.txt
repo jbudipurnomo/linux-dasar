@@ -1,0 +1,3 @@
+1. Menambah User
+    user@linux: # adduser new_user
+    user@linux: # passwd: ****** 
