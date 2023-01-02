@@ -49,17 +49,24 @@
 
     user@linux: # grub-mkconfig -o /boot/grub/grub.cfg
     user@linux: # nano /etc/network/interfaces
-	allow eth0
-	auto eth0
-	iface eth0 inet dhcp
+	    allow eth0
+	    auto eth0
+	    iface eth0 inet dhcp
 	    
-	allow hotplug eth1
-	auto eth1
-	iface eth1 inet dhcp
+	    allow hotplug eth1
+	    auto eth1
+	    iface eth1 inet dhcp
 
     user@linux: # reboot  
 
     Jika tidak diperlukan perubahan penamaan NIC dari Kernel terbaru maka tidak perlu diubah, cukup dengan menyesuaikan informasi NIC (enp2s0 atau yang lain selain eth yang sudah tersedia. 
 
-4. 
+4. Manajemen File 
+
+## ROOT Login 
+    user@linux: $ su -l             ----- atau -----
+    user@linux: $ sudo su 
+
+## 
+
  
