@@ -96,4 +96,16 @@
 
 5. Manajemen File
 
+## Melihat File & Folder
+    user@linux: # ls -a
+    user@linux: # ls -l
+    user@linux: # ls -a | grep in Folder
+
+## Masuk ke Direktori/Folder
+    user@linux: # cd /Direktori
+    user@linux: # cd /Folder
+
+## Keluar dari Direktori/Folder
+    user@linux: # cd ..
+
 
