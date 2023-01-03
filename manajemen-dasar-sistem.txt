@@ -67,4 +67,24 @@
     user@linux: $ su -l             ----- atau -----
     user@linux: $ sudo su 
 
-## 
+## ROOT Logout
+    user@linux: $ exit 
+
+## Membuat USER baru
+    user@linux: # useradd alfi
+
+## Menghapus USER
+    user@linux: # userdel alfi
+
+## Mengganti Password USER yang sedang aktif
+    user@linux: # passwd
+
+## Membuat Group
+    user@linux: # groupadd DIV
+
+## Memasukkan USER ke dalam Group
+    user@linux: # passwd -a alfi DIV
+
+## Menghapus Group 
+    user@linux: # groupdel DIV
+
