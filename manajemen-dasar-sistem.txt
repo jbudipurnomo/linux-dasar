@@ -108,4 +108,19 @@
 ## Keluar dari Direktori/Folder
     user@linux: # cd ..
 
+## Membuat File 
+    user@linux: # touch File                    --- atau ---
+    user@linux: # cat file 
+
+## Edit File
+    user@linux: # nano file.txt                 --- atau ---
+    user@linux: # nano /Folder/File
+
+## Menambahkan Kata atau Kalimat ke dalam isi File
+    user@linux: # cat tambah file > file        --- atau ---
+    user@linux: # cat tambah file > /Folder/File
+
+## Membuat Folder/Direktori
+    user@linux: # mkdir Folder                  --- atau ---
+    user@linux: # mkdir /Folder/Direktori
 
