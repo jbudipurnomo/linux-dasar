@@ -88,3 +88,10 @@
 ## Menghapus Group 
     user@linux: # groupdel DIV
 
+## Reboot Server
+    user@linux: # reboot
+
+## Shutdown Server
+    user@linux: # poweroff
+
+
