@@ -61,7 +61,7 @@
 
     Jika tidak diperlukan perubahan penamaan NIC dari Kernel terbaru maka tidak perlu diubah, cukup dengan menyesuaikan informasi NIC (enp2s0 atau yang lain selain eth yang sudah tersedia. 
 
-4. Manajemen File 
+4. Manajemen Akses 
 
 ## ROOT Login 
     user@linux: $ su -l             ----- atau -----
@@ -93,5 +93,7 @@
 
 ## Shutdown Server
     user@linux: # poweroff
+
+5. Manajemen File
 
 
