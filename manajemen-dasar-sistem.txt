@@ -150,7 +150,7 @@
     user@linux: # rm -r Folder                      --- atau ---
     user@linux: # rm -rf /Direktori/Folder
 
-6. Informasi Sistem OS  
+6. Informasi Sistem OS & Manajemen Sistem   
 
 ## Informasi Server
     user@linux: # lscpu
@@ -172,4 +172,31 @@
     user@linux: # top
     user@linux: # htop 
 
-## 
+## Akses Perangkat (device)
+    user@linux: # df
+
+## Mount - Unmount 
+    user@linux: # mount /dev/
+    user@linux: # unmount /dev/
+
+## Akses Jaringan - LAN 
+    user@linux: # ping [ip address]
+    user@linux: # ping -t [ip address]
+
+## Akses Hostname
+    user@linux: nslookup
+
+## Trace Paket Data di Jaringan LAN
+    user@linux: tracepath [domain]
+
+## Statistik TCP/ip
+    user@linux: # netstat
+
+## Perangkat Jaringan - LAN 
+    user@linux: # ifconfig                          --- atau ---
+    user@linux: # ip -a                             --- atau ---
+    user@linux: # route
+
+## Informasi Domain 
+    user@linux: ## whois [domain] 
+
