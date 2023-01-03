@@ -124,3 +124,10 @@
     user@linux: # mkdir Folder                  --- atau ---
     user@linux: # mkdir /Folder/Direktori
 
+## Mengganti Nama File (rename)
+    user@linux: # mv file File-baru
+
+## Mengganti Nama Folder
+    user@linux: # mv /Direktori/Folder /Direktori/Folder-baru
+
+
