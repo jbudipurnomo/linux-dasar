@@ -130,4 +130,46 @@
 ## Mengganti Nama Folder
     user@linux: # mv /Direktori/Folder /Direktori/Folder-baru
 
+## Copy File
+    user@linux: # cp file File-1
 
+## Copy Folder
+    user@linux: # cp Folder /Direktori/Folder-1
+
+## Memindahkan File ke Folder
+    user@linux: # mv file /Folder
+
+## Menindahkan Folder
+    user@linux: # mv Folder /Direktori/New-Folder
+
+## Menghapus File
+    user@linux: # rm file
+
+## Menghapus Folder
+    user@linux: # rmdir Folder                      --- atau ---
+    user@linux: # rm -r Folder                      --- atau ---
+    user@linux: # rm -rf /Direktori/Folder
+
+6. Informasi Sistem OS  
+
+## Informasi Server
+    user@linux: # lscpu
+
+## Informasi Slot PCI
+    user@linux: # lspci
+    user@linux: # lspci -k
+
+## Informasi USB Device
+    user@linux: # lsusb
+    user@linux: # lsblk
+
+## Memory Free
+    user@linux: # free -m 
+
+## Informasi Sistem
+    user@linux: # uname
+    user@linux: # ps -aux
+    user@linux: # top
+    user@linux: # htop 
+
+## 
