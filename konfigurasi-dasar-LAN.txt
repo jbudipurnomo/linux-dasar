@@ -1,3 +1,25 @@
 1. IP Address 
 
 # Konfigurasi LAN 
+    user@linux: # ifconfig
+    user@linux: # nano /etc/network/interfaces
+
+        ## Public Interface (WAN) 
+            auto eth0
+            iface eth0 inet static
+            address 192.168.53.23       ## IP Public
+            gateway 202.51.22.103       ##(IP DNS ISP)  
+        
+        ## Local Interface
+            auto eth1
+            iface eth1 inet static
+            address 192.200.30.2        ## IP Lan 
+            netmask 255.255.255.240     ## Subnet /28 
+            network 192.200.30.0 
+            broadcast 192.200.30.31 
+
+# Update NIC & IP Address
+    user@linux: # /etc/init.d/networking restart
+    user@linux: #  systemctl restart networking 
+    
+
